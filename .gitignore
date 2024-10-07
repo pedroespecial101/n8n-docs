@@ -1,18 +1,11 @@
-node_modules
-.DS_Store
-.tmp
-tmp
-dist
-npm-debug.log*
-yarn.lock
-.env
-.vscode
-.idea
+# Ignore everything
+*
 
-venv
-env
-site
-__pycache__/
+# But don't ignore the docs directory
+!/docs
 
-## Ignore pyenv configuration
-.python-version
+# Don't ignore .md files in the docs directory and its subdirectories
+!/docs/**/*.md
+
+# Ignore everything else in docs subdirectories
+/docs/**/
